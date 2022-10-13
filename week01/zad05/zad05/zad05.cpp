@@ -5,10 +5,12 @@
 
 int main()
 {
-    int m, n, a;
+    double m, n, a;
     std::cin >> m;
     std::cin >> n;
     std::cin >> a;
+    double r = ceil((m * n) / (a * a));
+    std::cout << r;
 
 }
 
