@@ -9,10 +9,10 @@ int main()
     int year = dateNumber % 10000;
     if (month < 10)
     {
-        cout << day + '/'+ '0' + month +'/'+ year;
+        cout << day << '/'+ '0' << month <<'/'<< year;
     }
     else
     {
-        cout << day + '/' + month +'/'+ year;
+        cout << day << '/' << month <<'/'<< year;
     }
 }
