@@ -1,22 +1,27 @@
 #include <iostream>
-
 using namespace std;
 int main()
 {
-    int number1, number2;
-    cin >> number1;
-    cin >> number2;
-    if (number1 > 0 || number2 > 0)
+    int dateNumber;
+    cin >> dateNumber;
+    int day = dateNumber / 1000000;
+    int month = (dateNumber % 1000000) / 10000;
+    int year = dateNumber % 10000;
+    if (month < 10)
     {
-        cout << "1 is positive";
-    }
-    else if (number1 > 0 && number2 > 0)
-    {
-        cout << "2 are positive";
+        cout << day + '/'+ '0' + month +'/'+ year;
     }
     else
     {
-        cout << "0 are positive";
+        cout << day + '/' + month +'/'+ year;
+    }
+    if (day < 10)
+    {
+        cout << day + '/'+ '0' + month +'/'+ year;
+    }
+    else
+    {
+        cout << day + '/' + month +'/'+ year;
     }
     
 }
