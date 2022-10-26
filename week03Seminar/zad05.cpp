@@ -15,13 +15,4 @@ int main()
     {
         cout << day + '/' + month +'/'+ year;
     }
-    if (day < 10)
-    {
-        cout << day + '/'+ '0' + month +'/'+ year;
-    }
-    else
-    {
-        cout << day + '/' + month +'/'+ year;
-    }
-    
 }
